@@ -16,7 +16,7 @@ class Triangle
       array[0] == array[1] || array[1] == array[2] || array[0] == array[2]
       :isosceles
     elsif
-   @lenth1 == 0
+   @lenth1 + @length2 + @length3 == 0
    begin
      raise PartnerError
    rescue PartnerError => error
