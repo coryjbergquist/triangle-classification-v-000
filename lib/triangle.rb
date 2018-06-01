@@ -19,13 +19,14 @@ class Triangle
    @lenth1 == 0
       raise
       TriangleError
-  else
+   else
     :scalene
   end
+  end
+  class TriangleError < StandardError
+  # triangle error code
   end
 end
 
 
-  class TriangleError < StandardError
-  # triangle error code
-  end
+  
