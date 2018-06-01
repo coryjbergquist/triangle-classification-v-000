@@ -16,7 +16,6 @@ class Triangle
    elsif
       array[0] == array[1] || array[1] == array[2] || array[0] == array[2]
       :isosceles
-      binding.pry
     elsif
    @length1 == 0 || @length1 == nil
    begin
