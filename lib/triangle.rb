@@ -16,18 +16,14 @@ class Triangle
       array[0] == array[1] || array[1] == array[2] || array[0] == array[2]
     :isosceles
   elsif
-    if @lenth1 == 0
+   @lenth1 == 0
       raise
       TriangleError
   else
     :scalene
   end
-  end
 
-  class TriangleError < StandardError
-  # triangle error code
-  end
+
 
 end
 end
-
