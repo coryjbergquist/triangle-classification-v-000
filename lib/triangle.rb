@@ -13,7 +13,7 @@ class Triangle
      array.all? do |x| x == array[1] end
      :equilateral
    elsif
-      all_sides % @length1 != 0
+      array.all? do |x| x == array[1] || x == array[2] x == array[3]
     :isosceles
   elsif
     @length1 != @length2 && @length1 != @length3 && @length2 =! @length3
