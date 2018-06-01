@@ -18,6 +18,7 @@ class Triangle
     elsif
    @lenth1 == 0
       raise TriangleError
+    end
    else
     :scalene
   end
