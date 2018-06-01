@@ -14,17 +14,15 @@ class Triangle
      :equilateral
    elsif
       array[0] == array[1] || array[1] == array[2] || array[0] == array[2]
-    :isosceles
-  elsif
+      :isosceles
+    elsif
    @lenth1 == 0
       raise
       TriangleError
   else
     :scalene
   end
-
-
-
+  end
 end
 
 
