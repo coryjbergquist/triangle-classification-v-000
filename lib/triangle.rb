@@ -12,7 +12,7 @@ class Triangle
     array = [@length1, @length2, @length3]
     binding.pry
   if
- @length1 == 0 || @length1 == nil
+ @length1 == 0 
  begin
    raise TriangleError
  rescue TriangleError => error
