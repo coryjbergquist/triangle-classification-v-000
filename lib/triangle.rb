@@ -14,6 +14,8 @@ class Triangle
    elsif
       all_sides % @length1 != 0
     :isosceles
+  elsif 
+    @length1 != @length2 && @length1 != @length3 && @length2 =! @length3
   end
   end
 
