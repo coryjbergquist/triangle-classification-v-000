@@ -17,6 +17,7 @@ class Triangle
       :isosceles
     elsif
    @length1 == 0 || @length1 == nil
+   binding.pry
    begin
      raise PartnerError
    rescue PartnerError => error
