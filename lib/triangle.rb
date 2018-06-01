@@ -20,8 +20,8 @@ class Triangle
     elsif
    @length1 == 0 || @length1 == nil
    begin
-     raise PartnerError
-   rescue PartnerError => error
+     raise TriangleError
+   rescue TriangleError => error
        puts error.message
    end
 
