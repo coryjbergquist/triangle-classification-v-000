@@ -10,19 +10,19 @@ class Triangle
 
   def kind
     array = [@length1, @length2, @length3]
-   if
+  if
+ @length1 == 0 || @length1 == nil
+ begin
+   raise TriangleError
+ rescue TriangleError => error
+     puts error.message
+ end
+   elsif
      array.all? do |x| x == array[1] end
      :equilateral
    elsif
       array[0] == array[1] || array[1] == array[2] || array[0] == array[2]
       :isosceles
-    elsif
-   @length1 == 0 || @length1 == nil
-   begin
-     raise TriangleError
-   rescue TriangleError => error
-       puts error.message
-   end
 
      else
       :scalene
