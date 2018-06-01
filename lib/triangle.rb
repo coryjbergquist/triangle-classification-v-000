@@ -9,6 +9,8 @@ class Triangle
 
   def kind
    :equilateral if @length1 == @length2 && @length2 == @length3
+   :isosceles if @length1 == @length2 || @length2 == @length3 || @length1 == @length3
+   
 
   end
 
