@@ -18,12 +18,14 @@ class Triangle
     elsif
    @lenth1 == 0
       raise TriangleError
-    
+
      else
       :scalene
     end
   end
   class TriangleError < StandardError
-  # triangle error code
+  def message
+    "you must have a length!"
   end
+end
 end
