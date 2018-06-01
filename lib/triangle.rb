@@ -15,18 +15,17 @@ class Triangle
    elsif
       array[0] == array[1] || array[1] == array[2] || array[0] == array[2]
     :isosceles
-  elsif 
+  elsif
     if @lenth1 == 0
-      raise 
+      raise
       TriangleError
   else
     :scalene
   end
   end
 
-
-end
-
-class TriangleError < StandardError
+  class TriangleError < StandardError
   # triangle error code
+  end
+
 end
