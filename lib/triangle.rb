@@ -17,8 +17,7 @@ class Triangle
       :isosceles
     elsif
    @lenth1 == 0
-      raise
-      TriangleError
+      raise TriangleError
    else
     :scalene
   end
@@ -27,6 +26,3 @@ class Triangle
   # triangle error code
   end
 end
-
-
-  
