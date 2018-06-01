@@ -10,7 +10,7 @@ class Triangle
   def kind
     array = [@length1, @length2, @length3]
    if
-     all_sides - @length1 == @length2 + @length3
+     array.all? do |x| x == array[1] end
      :equilateral
    elsif
       all_sides % @length1 != 0
