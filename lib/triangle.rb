@@ -17,7 +17,11 @@ class Triangle
       :isosceles
     elsif
    @lenth1 == 0
-      raise TriangleError
+   begin
+     raise PartnerError
+   rescue PartnerError => error
+       puts error.message
+   end
 
      else
       :scalene
