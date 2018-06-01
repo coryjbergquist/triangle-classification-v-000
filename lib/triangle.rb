@@ -8,8 +8,9 @@ class Triangle
 
 
   def kind
-   :equilateral if @length1 == @length2 && @length2 == @length3
-   :isosceles if @length1 == @length2 || @length2 == @length3 || @length1 == @length3
+    all_sides = @length1 + @length2 + @length3
+   :equilateral if all_sides % @length1 == 0
+   
 
 
   end
