@@ -26,8 +26,6 @@ class Triangle
     end
   end
   class TriangleError < StandardError
-  def message
-    "you must have a length!"
   end
 end
 end
