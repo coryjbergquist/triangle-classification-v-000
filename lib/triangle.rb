@@ -13,7 +13,7 @@ class Triangle
      array.all? do |x| x == array[1] end
      :equilateral
    elsif
-      array.all? do |x| x == array[0] || x == array[1] || x == array[2] end
+      array[0] == array[1] || array[1] == array[2] || array[0] == array[2]
     :isosceles
   else
     :scalene
