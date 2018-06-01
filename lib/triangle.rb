@@ -9,8 +9,12 @@ class Triangle
 
   def kind
     all_sides = @length1 + @length2 + @length3
-   :equilateral if all_sides % @length1 == 0
-   :isosceles if all_sides % @length1 != 0
+    if
+   if all_sides % @length1 == 0
+     :equilateral 
+   elsif 
+      all_sides % @length1 != 0
+    :isosceles 
 
 
   end
