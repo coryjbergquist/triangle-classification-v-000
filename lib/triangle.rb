@@ -15,8 +15,7 @@ class Triangle
    elsif
       array.all? do |x| x == array[1] || x == array[2] || x == array[3] end
     :isosceles
-  elsif
-    array.all?
+  else
     :scalene
   end
   end
