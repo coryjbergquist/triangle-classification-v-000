@@ -10,7 +10,6 @@ class Triangle
 
   def kind
     array = [@length1, @length2, @length3]
-    binding.pry
   if
   @length1 <= 0 || @length2 <= 0 || @length3 <= 0
         raise TriangleError
