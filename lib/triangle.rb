@@ -13,6 +13,8 @@ class Triangle
   if
  @length1 <= 0
    raise TriangleError
+ elsif @length < 0
+   raise TriangleError
    elsif
      array.all? do |x| x == array[1] end
      :equilateral
