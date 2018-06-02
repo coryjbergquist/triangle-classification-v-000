@@ -13,6 +13,7 @@ class Triangle
   if
  @length1 == 0
    raise TriangleError
+   binding.pry
  elsif array.all? do |x| x.to_i < 0 end
   binding.pry
    raise TriangleError
