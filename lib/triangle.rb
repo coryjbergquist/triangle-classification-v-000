@@ -27,9 +27,12 @@ class Triangle
       :scalene
     end
   end
-  class TriangleError < StandardError
-    def message
-      "you must give a positive number"
-    end
+
+end
+
+
+class TriangleError < StandardError
+  def message
+    "you must give a positive number"
   end
 end
