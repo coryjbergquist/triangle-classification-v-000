@@ -12,11 +12,7 @@ class Triangle
     array = [@length1, @length2, @length3]
   if
   @length1 <= 0
-  begin
         raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
    elsif
      array.all? do |x| x == array[1] end
      :equilateral
