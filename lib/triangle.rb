@@ -11,7 +11,7 @@ class Triangle
   def kind
     array = [@length1, @length2, @length3]
   if
- @length1 == 0 || @length1 < 0
+ @length1 == 0 || @length1.negative?
    raise TriangleError
    elsif
      array.all? do |x| x == array[1] end
