@@ -13,8 +13,8 @@ class Triangle
   if
   @length1 == 0
   begin
-        raise PartnerError
-      rescue PartnerError => error
+        raise TriangleError
+      rescue TriangleError => error
           puts error.message
       end
    elsif
