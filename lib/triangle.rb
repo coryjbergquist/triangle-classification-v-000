@@ -11,7 +11,7 @@ class Triangle
   def kind
     array = [@length1, @length2, @length3]
   if
-  @length1 <= 0
+  @length1 == 0
   begin
         raise PartnerError
       rescue PartnerError => error
