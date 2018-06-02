@@ -14,6 +14,7 @@ class Triangle
  @length1 == 0
    raise TriangleError
  elsif array.all? do |x| x.to_i < 0 end
+  binding.pry
    raise TriangleError
    elsif
      array.all? do |x| x == array[1] end
