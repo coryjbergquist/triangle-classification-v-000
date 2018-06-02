@@ -13,7 +13,7 @@ class Triangle
   if
  @length1 == 0
    raise TriangleError
- elsif @length.to_i < 0
+ elsif array.all? do |x| x.to_i < 0 end
    raise TriangleError
    elsif
      array.all? do |x| x == array[1] end
