@@ -11,10 +11,12 @@ class Triangle
   def kind
     array = [@length1, @length2, @length3]
   if
-  @length1
-  binding.pry
-   raise TriangleError
-
+  @length1 <= 0
+  begin
+        raise PartnerError
+      rescue PartnerError => error
+          puts error.message
+      end
    elsif
      array.all? do |x| x == array[1] end
      :equilateral
